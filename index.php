@@ -15,8 +15,8 @@ function rrmdir($dir) {
 }
 
 $counter = 0;
-$max     = 1500;
-$yol     = "panel/customer-orders/";
+$max     = 10; // Limit
+$yol     = ""; // Dosya Yolu
 $dizin   = opendir($yol);
 
 while((($dosya = readdir($dizin)) !== false) && ($counter < $max)){
